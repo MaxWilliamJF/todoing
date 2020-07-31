@@ -1,0 +1,9 @@
+{
+  "name": "ToDoing! - Saúde Log",
+  "short_name": "ToDoiing!",
+  "theme_color": "#f27b1f",
+  "background_color": "#2196f3",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "/todoing"
+}

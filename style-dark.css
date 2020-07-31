@@ -1,0 +1,27 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.5s ease;
+    transition: color 0.65s ease;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#darkMode {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    background-color: #fff;
+    padding: .8em 1.2em;
+    border-radius: 2em;
+    width: 20px;
+}
+
+#darkMode:hover {
+    cursor: pointer;
+}
