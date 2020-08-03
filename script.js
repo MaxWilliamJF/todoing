@@ -5,6 +5,34 @@ fetch('data.json')
 // Função 'principal' do app
 function letsDoIt (dados) {
     console.log('Dados: ', dados);
+
+    const theul = document.getElementById('theul');
+
+    if (dados.itens.length) {
+        dados.itens.forEach((item, num) => {
+            theul.appendChild(createListElement(item, num));
+        });
+    }
+}
+
+function createListElement (item, num) {
+    const li = document.createElement('li');
+    const span = document.createElement('span');
+    const a = document.createElement('a');
+    const div = document.createElement('div');
+
+    span.innerText = 'Coisar';
+    a.href = '#'
+    a.innerText = item.color + ' - ' + item.due + ' | ' + item.title;
+    div.innerText = item.description;
+
+    li.appendChild(span);
+    li.appendChild(a);
+    li.appendChild(div);
+
+    li.classList.add('card');
+
+    return li;
 }
 
 // "Dark mode"

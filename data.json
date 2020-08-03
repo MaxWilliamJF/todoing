@@ -1,1 +1,22 @@
-{}  
+{
+    "itens": [
+        {
+            "color": "COR A",
+            "due": "longo",
+            "title": "Item nesta área",
+            "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At molestias quam id laborum, neque ex cupiditate voluptatibus ipsa, impedit placeat dolores voluptate quasi enim, possimus obcaecati similique nemo hic! Corporis!"
+        },
+        {
+            "color": "COR B",
+            "due": "curto",
+            "title": "Outro item por aqui",
+            "description": "Pequena descrição"
+        },
+        {
+            "color": "COR C",
+            "due": "curto",
+            "title": "Outro item por aqui",
+            "description": "Pequena descrição"
+        }   
+    ]
+}
