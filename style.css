@@ -59,7 +59,12 @@ ul li div {
 
 ul li div.show {
     overflow: initial;
-    display: block;   
+    display: block;
+    height: auto;
+}
+
+#theul li > span:hover {
+    cursor: pointer;
 }
 
 #darkMode {

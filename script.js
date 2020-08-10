@@ -21,10 +21,16 @@ function createListElement (item, num) {
     const a = document.createElement('a');
     const div = document.createElement('div');
 
-    span.innerText = 'Coisar';
+    span.innerText = '>>>';
+    span.dataset.id = num;
     a.href = '#'
     a.innerText = item.color + ' - ' + item.due + ' | ' + item.title;
     div.innerText = item.description;
+
+    span.addEventListener('click', (item) => {
+        const divDesc = item.target.parentNode.children[2];
+        (divDesc.classList.length === 0) ? divDesc.classList.add('show') : divDesc.classList.remove('show');
+    });
 
     li.appendChild(span);
     li.appendChild(a);
